@@ -3,14 +3,14 @@ import * as Styled from "./styles";
 interface StepFormProps {
   title: string;
   nextStep?: () => void;
-  previousStep?: () => void;
+  prevStep?: () => void;
   children: React.ReactNode;
 }
 
 export const StepForm = ({
   title,
   nextStep,
-  previousStep,
+  prevStep,
   children,
 }: StepFormProps) => {
   return (
@@ -18,7 +18,7 @@ export const StepForm = ({
       <Styled.Title>{title}</Styled.Title>
       {children}
       <Styled.Actions>
-        {previousStep ? <button onClick={previousStep}>Anterior</button> : null}
+        {prevStep ? <button onClick={prevStep}>Anterior</button> : null}
         {nextStep ? <button onClick={nextStep}>Próximo</button> : null}
       </Styled.Actions>
     </Styled.Container>

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { StepForm } from "../StepForm";
+import { api } from "../../service/api";
 
 export const MultiStepForm = () => {
   const [step, setStep] = useState(1);
@@ -26,17 +27,17 @@ export const MultiStepForm = () => {
   switch (step) {
     case 1:
       return (
-        <StepForm title="Passo 1">
-          <input
-            type="text"
-            name="name"
-            value={name}
-            onChange={handleChange}
-            placeholder="Nome"
-          />
-          <button onClick={prevStep}>Anterior</button>
-          <button onClick={nextStep}>Próximo</button>
-        </StepForm>
+        <form>
+          <StepForm title="Passo 1" nextStep={nextStep} prevStep={prevStep}>
+            <input
+              type="text"
+              name="name"
+              value={name}
+              onChange={handleChange}
+              placeholder="Nome"
+            />
+          </StepForm>
+        </form>
       );
     default:
       return null;
