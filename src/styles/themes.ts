@@ -34,6 +34,15 @@ export const light: DefaultTheme = {
       light: "#0761bf",
       dark: "#003063",
     },
+    buttontext: {
+      main: "#020202",
+      light: "#0761bf",
+      dark: "#003063",
+    },
+    buttonbg: {
+      main: "#378fed",
+      dark: "#d9d9d9",
+    },
     white: "#ffffff",
     black: "#000000",
   },
@@ -81,5 +90,14 @@ export const dark: DefaultTheme = {
       light: "#ffffff",
       dark: "#d9d9d9",
     },
-  },
-};
+    buttontext: {
+      main: "#f2f2f2",
+      light: "#0761bf",
+      dark: "#003063",
+    },
+    buttonbg: {
+      main: "#a9bacc",
+      dark: '#fffff2',
+    },
+}
+}

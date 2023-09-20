@@ -43,6 +43,8 @@ declare module "styled-components" {
       success?: ColorPalette;
       background: ColorPalette;
       text: ColorPalette;
+      buttontext: ColorPalette;
+      buttonbg: ColorPalette;
       white: string;
       black: string;
     };
