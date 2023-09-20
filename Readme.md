@@ -1,4 +1,4 @@
-# Piu Piu - Armando Assini
+# MultiStep Form - Armando Assini
 
 O presente projeto consiste no desenvolvimento de um formulário Multistep.
 
